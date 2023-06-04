@@ -1,0 +1,45 @@
+<html><head><title>booking</title>
+<link rel="stylesheet" href="css/booking.css">
+</head>
+<body>
+<!-- <h2>BOOKING HERE</h2><br> -->
+<div class="container">
+<div class="title"><h2> BOOKING HERE </h2></div>
+<form id="booking" method="post" name="registration" class="registartion-form" action="./booking.html">
+<table>
+	   <tr>
+        <td><p><label for="check_in">Check In:</label></p></td>
+        <td><input required type="date" name="check_in" id="fn" placeholder="Enter your arrival date here"><br></td>
+      </tr>
+      <tr>
+        <td><p><label for="check_out">Check Out:</label></p></td>
+        <td><input required type="date" name="check_out" id="em" placeholder="Enter your departure date here"><br></td>
+      </tr>
+      <tr>
+        <td><p><label for="person">Person:</label></p></td>
+        <td><input required type="number" min="1" name="person" id="ad" placeholder="Enter total person here"><br></td>
+      </tr>
+      <tr>
+        <td><p><label for="Room">Rooms</label></p></td>
+        <td>
+          <select name="rooms" id="rooms">
+            <option value="Select room type">Select Room type</option>
+            <option value="Single_Room">Single Room</option>
+            <option value="Double_Room">Double Room</option>
+            <option value="Luzury_Room">Luzury Room</option>
+            <option value="Buisness_Room">Buisness Room</option>
+          </select><br><br>
+        </td>
+      </tr>
+		<td>
+			<input type="checkbox" id="check" name="save"><span id="check"> I agree all the terms and conditions.<br></span><br>
+		</td>
+	  <tr>
+        <td colspan="2"><input type="submit" class="submit" id="sub" value="Register" /></td>
+      </tr>
+    </table>
+</form>
+</div>
+</body>
+</html>
+
